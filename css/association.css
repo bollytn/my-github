@@ -192,6 +192,7 @@ ul {
     padding: 0 30px;
     transition: var(--main-transition);
     overflow: hidden;
+    font-weight: 600;
 }
 .header .main-nav > li > a::before {
     content: "";
@@ -441,5 +442,5 @@ ul {
 .gallery .box .image:hover img{
     transform: rotate(5deg) scale(1.1);
 }
-/* End Gallery  */
+/* End Gallery */
 
