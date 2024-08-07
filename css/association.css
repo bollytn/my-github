@@ -489,6 +489,9 @@ ul {
     font-size: 40px;
     letter-spacing: -2px;
 }
+.discount .image .para{
+    text-align: left;
+}
 .discount .image .content p {
     line-height: 1.6;
     font-size: 18px;
