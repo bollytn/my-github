@@ -537,6 +537,7 @@ ul {
 .discount .form .content h2 {
     font-size: 40px;
     letter-spacing: -2px;
+    color:var(--main-color-alt);
 }
 .discount .form .input {
     padding: 15px;
@@ -547,6 +548,7 @@ ul {
     border-bottom: 1px solid #ccc;
     margin-bottom: 25px;
     caret-color:var(--main-color-alt2);
+    color: var(--main-color-alt);
 }
 .discount .form .input:focus {
     outline: none;
@@ -556,6 +558,7 @@ ul {
     padding: 10px;
     margin-bottom: 25px;
     border: 1px solid #ccc;
+    color: var(--main-color-alt);
 }
 /*start theme select */
 select {
@@ -616,12 +619,10 @@ select.minimal {
     text-shadow: 0 0 0 #000;
   }
 /* End theme Select */
-.discount .form option {
-
-}
 .discount .form textarea.input {
     resize: none;
     height: 200px;
+    color: var(--main-color-alt);
 }
 .discount .form [type="submit"] {
     border: none;

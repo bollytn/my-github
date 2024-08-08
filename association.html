@@ -13,6 +13,17 @@
     <link rel="stylesheet" href="./fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/css/all.min.css">
     <!--style de projet-->
     <link rel="stylesheet" href="./css/association.css">
+    <!-- js mail function -->
+     <script src="./js/mail.js"></script>
+    <!-- Service Mail -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function(){
+        emailjs.init({
+        publicKey: "rcK-plDa5pVCg7MW0",
+       });
+      })();
+</script>
     <title>Association</title>
 </head>
 <body>
@@ -49,7 +60,7 @@
       <!-- End Landing -->
        <!--Star Article-->
        <div class="articles" id="articles">
-          <h2 class="main-title">Formationas</h2>
+          <h2 class="main-title">Formations</h2>
           <div class="container">
             <div class="box">
               <img src="./imgs/cat-01.jpg" alt="">
@@ -203,21 +214,19 @@
         <div class="content">
           <h2>Inscrivez-vous</h2>
           <form method="post">
-            <input class="input" type="text" placeholder="Your Name" name="name" />
-            <input class="input" type="email" placeholder="Your Email" name="email" />
-            <input class="input" type="text" placeholder="Your Phone" name="mobile" />
+            <input class="input" type="text" placeholder="Nom" name="name" />
+            <input class="input" type="email" placeholder="Email" name="email" />
+            <input class="input" type="text" placeholder="Telephone" name="mobile" />
             <select name="choice" id="choice" class="minimal">
               <option value="scratch">Scratch</option>
               <option value="web">HTML/CSS/JavaScript</option>
             </select>
-            <textarea class="input" placeholder="Tell Us About Your Needs" name="message"></textarea>
+            <textarea class="input" placeholder="Faites-nous part de vos besoins" name="message"></textarea>
             <input type="submit" value="Send" />
           </form>
         </div>
       </div>
     </div>
     <!-- End Discount -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script src="./js/mail.js"></script>
 </body>
 </html>
