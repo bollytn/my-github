@@ -19,12 +19,11 @@ emailjs.send(serviceID,templateID,params)
         document.getElementById("message").value = "";
         document.getElementById("choix").value = "";
         console.log(res);
-        alert("votre message est envoyer avec succès")
         let x = document.getElementById("toast");
         x.className = "show";
         setTimeout(function(){
-            x.className = x.className.replace("show","")
-        })
+            x.className = x.className.replace("show","");
+        },3000);``
     })
 .catch((err) => console.log(err));
 }
