@@ -531,7 +531,7 @@ ul {
     text-align: center;
     padding: 0 15px;
 }
-.discount .content form {
+.discount .content .gr-form {
     width: 300px;
 }
 .discount .form .content h2 {
