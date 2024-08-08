@@ -24,9 +24,3 @@ emailjs.send(serviceID,templateID,params)
     })
 .catch((err) => console.log(err));
 }
-
-function handleChange(e) {
-    let innerText = e.target[e.target.options.selectedIndex].innerText;
-    console.log(innerText);
-    return innerText;
-}
