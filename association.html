@@ -214,15 +214,15 @@
         <div class="content">
           <h2>Inscrivez-vous</h2>
           <form method="post">
-            <input class="input" type="text" placeholder="Nom" name="name" />
-            <input class="input" type="email" placeholder="Email" name="email" />
-            <input class="input" type="text" placeholder="Telephone" name="mobile" />
+            <input class="input" type="text" placeholder="Nom" id="name" />
+            <input class="input" type="email" placeholder="Email" id="email" />
+            <input class="input" type="text" placeholder="Telephone" id="mobile" />
             <select name="choice" id="choice" class="minimal">
               <option value="scratch">Scratch</option>
               <option value="web">HTML/CSS/JavaScript</option>
             </select>
-            <textarea class="input" placeholder="Faites-nous part de vos besoins" name="message"></textarea>
-            <input type="submit" value="Send" />
+            <textarea class="input" placeholder="Faites-nous part de vos besoins" id="message"></textarea>
+            <input type="submit" value="Send" onclick="sendMail()"/>
           </form>
         </div>
       </div>
