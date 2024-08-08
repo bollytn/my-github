@@ -580,8 +580,8 @@ select {
 
 select.minimal {
     background-image:
-      linear-gradient(45deg, transparent 50%, gray 50%),
-      linear-gradient(135deg, gray 50%, transparent 50%),
+      linear-gradient(45deg, transparent 50%, rgb(109, 4, 213) 50%),
+      linear-gradient(135deg, rgb(109, 4, 213) 50%, transparent 50%),
       linear-gradient(to right, #ccc, #ccc);
     background-position:
       calc(100% - 20px) calc(1em + 2px),
@@ -596,8 +596,8 @@ select.minimal {
   
   select.minimal:focus {
     background-image:
-      linear-gradient(45deg, green 50%, transparent 50%),
-      linear-gradient(135deg, transparent 50%, green 50%),
+      linear-gradient(45deg, var(--main-color) 50%, transparent 50%),
+      linear-gradient(135deg, transparent 50%, var(--main-color) 50%),
       linear-gradient(to right, #ccc, #ccc);
     background-position:
       calc(100% - 15px) 1em,
@@ -611,14 +611,10 @@ select.minimal {
     border-color: green;
     outline: 0;
   }
-  
-  
   select:-moz-focusring {
     color: transparent;
     text-shadow: 0 0 0 #000;
   }
-  
-
 /* End theme Select */
 .discount .form option {
 
