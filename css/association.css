@@ -483,7 +483,7 @@ ul {
 }
 .discount .image .content {
     text-align: center;
-    padding: 0 20px;
+    padding: 0 15px;
 }
 .discount .image .content h2 {
     font-size: 40px;
@@ -510,7 +510,8 @@ ul {
 }
 .discount .content {
     text-align: center;
-    padding: 0 20px;
+    padding: 0 15px;
+    position: relative;
 }
 .discount .form .content h2 {
     font-size: 40px;
@@ -536,7 +537,7 @@ ul {
 .discount .form [type="submit"] {
     border: none;
     background-color: var(--main-color-alt2);
-    width: calc(100% + 30px);
+    width: 100%;
     display: block;
     padding: 15px;
     color: white;
@@ -545,6 +546,7 @@ ul {
     border: none;
     cursor: pointer;
     transition: var(--main-transition);
+    position: absolute;
 }
 .discount .form [type="submit"]:hover {
     
