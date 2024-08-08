@@ -218,9 +218,14 @@
             <input class="input" type="text" placeholder="Nom" id="name" />
             <input class="input" type="email" placeholder="Email" id="email" />
             <input class="input" type="text" placeholder="Telephone" id="mobile" />
-            <select id="choice" class="minimal">
+            <select id="choix" class="minimal">
+              <option value="" selected disabled>Votre Formation</option>
               <option value="scratch">Scratch</option>
+              <option value="python">Python</option>
+              <option value="arduino">Arduino</option>
               <option value="web">HTML/CSS/JavaScript</option>
+              <option value="microbit">Microbit</option>
+              <option value="unity">Unity 3D</option>
             </select>
             <textarea class="input" placeholder="Faites-nous part de vos besoins" id="message"></textarea>
             <input type="submit" value="Send" onclick="sendMail()"/>

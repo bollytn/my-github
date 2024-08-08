@@ -553,7 +553,7 @@ ul {
 .discount .form .input:focus {
     outline: none;
 }
-.discount .form #choice {
+.discount .form #choix {
     width: 100%;
     padding: 10px;
     margin-bottom: 25px;
