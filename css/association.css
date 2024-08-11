@@ -517,8 +517,7 @@ ul {
     max-width: 500px;
 }
 .discount .image .content img {
-    width: 300px;
-    max-width: 100%;
+       max-width: 300px;
 }
 .discount .form {
     display: flex;
@@ -692,35 +691,35 @@ select.minimal {
     background-color:rgb(110 83 173 / 90%);
 }
 
-@media (max-width:767px) {
-    .discount .image {
-        flex-basis: min-content;
-    }   
-}
-@media (max-width:520px) {
-    .discount .image {
-        height: 40vh;
-        flex: 1;
-    }
-    .discount .image img {
-        display: none;
-    }   
-}
-@media (max-width:767px) {
+@media (max-width:767px) { 
     .discount .form {
         font-size: 18px;
         flex: 1;
-    }   
+    }
+    .discount .image .para {
+        display: none;
+    }
+    .discount .image h2 {
+        display: none;
+    }
 }
+
 @media (max-width:520px) {
+    .discount .image {
+        flex: 1;
+        height: 23vh;
+    }
+    .discount .image img {
+        width: 200px;
+    }  
+ 
     .discount .form{
         height: 50vh;
     } 
-}
-@media (max-width:520px) {
     .discount {
         flex-wrap: wrap;
     } 
 }
+
 
 /*  End Discount */
