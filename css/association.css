@@ -468,7 +468,6 @@ ul {
 .discount {
     min-height: 100vh;
     display: flex;
-    flex-wrap: wrap;
 }
 .discount .image {
     background-image: url(../imgs/discount-background1.jpg);
@@ -692,4 +691,36 @@ select.minimal {
 .discount .form [type="submit"]:hover {
     background-color:rgb(110 83 173 / 90%);
 }
+
+@media (max-width:767px) {
+    .discount .image {
+        flex-basis: min-content;
+    }   
+}
+@media (max-width:520px) {
+    .discount .image {
+        height: 40vh;
+        flex: 1;
+    }
+    .discount .image img {
+        display: none;
+    }   
+}
+@media (max-width:767px) {
+    .discount .form {
+        font-size: 18px;
+        flex: 1;
+    }   
+}
+@media (max-width:520px) {
+    .discount .form{
+        height: 50vh;
+    } 
+}
+@media (max-width:520px) {
+    .discount {
+        flex-wrap: wrap;
+    } 
+}
+
 /*  End Discount */
