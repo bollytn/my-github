@@ -139,7 +139,7 @@ ul {
 .animfin {
     animation: appear linear;
     animation-timeline: view();
-    animation-range: entry 0% cover 10%;
+    animation-range: entry 70% ;
 }
 @keyframes appear {
     from {
@@ -431,8 +431,10 @@ ul {
         transform: translateX(10px);
     }
 }
+
+/* animation hover */
 .articles .box:hover img:not(:hover) {
-    filter: grayscale(1) blur(1px);
+   /* filter: grayscale(1) blur(1px); */
 }
 
 /* End Articles */
