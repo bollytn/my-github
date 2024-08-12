@@ -130,6 +130,28 @@ ul {
         height: 100%;
     }
 }
+/* animation scroll */
+.anim {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+.animfin {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 10%;
+}
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+/* animation scroll */
+
 /*end global rules */
 
 /* Start Header */
@@ -374,6 +396,7 @@ ul {
 .articles .box img {
     max-width: 100%;
     width: 100%;
+    transition: var(--main-transition);
 }
 .articles .box .content {
     padding: 20px;
@@ -408,6 +431,10 @@ ul {
         transform: translateX(10px);
     }
 }
+.articles .box:hover img:not(:hover) {
+    filter: grayscale(1) blur(1px);
+}
+
 /* End Articles */
 /* Star Gallery  */
 .gallery {
