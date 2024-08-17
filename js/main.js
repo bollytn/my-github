@@ -1,24 +1,26 @@
-let userInput = document.querySelector('#name');
-let mobileInput = document.querySelector('mobile');
-
-(function(){
+(function () {
     emailjs.init({
-    publicKey: "rcK-plDa5pVCg7MW0",
-   });
-  })();
+        publicKey: "rcK-plDa5pVCg7MW0",
+    });
+})();
 
-document.forms[0].onsubmit = function (e) {
+function validation() {
+    let form = document.forms[0];
+    let name = document.getElementById('name');
+    let text = document.getElementById('text');
 
-    let userValid = false;
-    let telValid = false;
-
-    
-
-
-    if(userValid===false || telValid===false){
-        e.preventDefault(); 
-        console.log('send');
+    if (name.value.length > 5) {
+        text.classList.add('valid');
+        text.classList.remove('invalid');
+        
+        text.style.color = 'green';
+    } else {
+        text.classList.remove('valid');
+        text.classList.add('invalid');
+        
+        text.style.color = 'red';
     }
+
 }
 
 

@@ -1,226 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--google font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
-    <!--normalize-->
-    <link rel="stylesheet" href="./css/normalize.css">
-    <!--font awesome-->
-    <link rel="stylesheet" href="./fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/css/all.min.css">
-    <!--style de projet-->
-    <link rel="stylesheet" href="./css/association.css">
-    <!-- js mail function -->
-     <script src="./js/mail.js"></script>
-    <!-- Service Mail -->
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    
-    <title>Association</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!--google font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet" />
+  <!--normalize-->
+  <link rel="stylesheet" href="./css/normalize.css" />
+  <!--font awesome-->
+  <link rel="stylesheet" href="./fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/css/all.min.css" />
+  <!--style de projet-->
+  <link rel="stylesheet" href="./css/association.css" />
+  <!-- js mail function -->
+  <script src="./js/mail.js"></script>
+  <!-- Service Mail -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <title>Association</title>
 </head>
+
 <body>
-  
-    <!--Star Header-->
-    <div class="header" id="header">
-        <div class="container">
-         <div class="logo"  lang="ar" dir="ltr">
-            <img src="./logo.png" alt="association"/>
-        </div>       
-        <ul class="main-nav">
-                <li><a id="link" href="#formations">Formation</a></li>
-                <li><a id="link" href="#gallery">Gallery</a></li>
-                <li><a id="link" href="#discount">Pré-inscription</a></li>
-                <li><a id="link" href="#">Other links</a></li>
-        </ul>
-        </div>
+  <!--Star Header-->
+  <div class="header" id="header">
+    <div class="container">
+      <div class="logo" lang="ar" dir="ltr">
+        <img src="./logo.png" alt="association" />
+      </div>
+      <ul class="main-nav">
+        <li><a id="link" href="#formations">Formation</a></li>
+        <li><a id="link" href="#gallery">Gallery</a></li>
+        <li><a id="link" href="#discount">Pré-inscription</a></li>
+        <li><a id="link" href="#">Other links</a></li>
+      </ul>
     </div>
-    <!-- End Header -->
-    <!-- Start Landing -->
-    <div class="landing">
-        <div class="container">
-          <div class="text">
-            <h1 class="anim">الجمعية التونسية للبرمجة و الروبوتيك</h1>
-            <p class="anim"> المساعدة في توجيه و ارشاد الشباب في مجال التكنولوجيا الحديثة و الروبوتيك</p>
-          </div>
-          <div class="image">
-            <img decoding="async" src="imgs/landing-imageee.png" alt="" />
-          </div>
-        </div>
-        <a href="#articles" class="go-down">
-          <i class="fa-solid fa-angles-down fa-2x"></i>
-        </a>
+  </div>
+  <!-- End Header -->
+  <!-- Start Landing -->
+  <div class="landing">
+    <div class="container">
+      <div class="text">
+        <h1 class="anim">الجمعية التونسية للبرمجة و الروبوتيك</h1>
+        <p class="anim">
+          المساعدة في توجيه و ارشاد الشباب في مجال التكنولوجيا الحديثة و
+          الروبوتيك
+        </p>
       </div>
-      <!-- End Landing -->
-       <!--Star Article-->
-       <div class="articles" id="formations">
-          <h2 class="main-title">Formations</h2>
-          <div class="container">
-            <div class="box anim">
-              <img src="./imgs/cat-01.jpg" alt="">
-              <div class="content">
-                <h3>رحلة إلى مدينة العلوم</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut voluptates culpa dignissimos</p>
-              </div>
-              <div class="info">
-                <a href="#">Read More</a>
-                <i class="fa-solid fa-long-arrow-alt-right"></i>
-              </div>
-            </div>
-
-            <div class="box anim">
-              <img src="./imgs/cat-02.jpg" alt="">
-              <div class="content">
-                <h3>Formation Python</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut voluptates culpa dignissimos</p>
-              </div>
-              <div class="info">
-                <a href="#">Read More</a>
-                <i class="fa-solid fa-long-arrow-alt-right"></i>
-              </div>
-            </div>
-
-            <div class="box anim">
-              <img src="./imgs/cat-03.jpg" alt="">
-              <div class="content">
-                <h3>Formation Micro-bit</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut voluptates culpa dignissimos</p>
-              </div>
-              <div class="info">
-                <a href="#">Read More</a>
-                <i class="fa-solid fa-long-arrow-alt-right"></i>
-              </div>
-            </div>
-
-            <div class="box anim">
-              <img src="./imgs/cat-04.jpg" alt="">
-              <div class="content">
-                <h3>Formation Arduino</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut voluptates culpa dignissimos</p>
-              </div>
-              <div class="info">
-                <a href="#">Read More</a>
-                <i class="fa-solid fa-long-arrow-alt-right"></i>
-              </div>
-            </div>
-
-            <div class="box anim">
-              <img src="./imgs/cat-05.jpg" alt="">
-              <div class="content">
-                <h3>Formation Scratch</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut voluptates culpa dignissimos</p>
-              </div>
-              <div class="info">
-                <a href="#">Read More</a>
-                <i class="fa-solid fa-long-arrow-alt-right"></i>
-              </div>
-            </div>
-
-            <div class="box anim">
-              <img src="./imgs/cat-06.jpg" alt="">
-              <div class="content">
-                <h3>Formation HTML/CSS/Javascript</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut voluptates culpa dignissimos</p>
-              </div>
-              <div class="info">
-                <a href="#">Read More</a>
-                <i class="fa-solid fa-long-arrow-alt-right"></i>
-              </div>
-            </div>
-
-            <div class="box anim">
-              <img src="./imgs/cat-07.jpg" alt="">
-              <div class="content">
-                <h3>Formation Unity 3D</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut voluptates culpa dignissimos</p>
-              </div>
-              <div class="info">
-                <a href="#">Read More</a>
-                <i class="fa-solid fa-long-arrow-alt-right"></i>
-              </div>
-            </div>
-
-            <div class="box anim">
-              <img src="./imgs/cat-08.jpg" alt="">
-              <div class="content">
-                <h3>Scratch Avancée</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut voluptates culpa dignissimos</p>
-              </div>
-              <div class="info">
-                <a href="#">Read More</a>
-                <i class="fa-solid fa-long-arrow-alt-right"></i>
-              </div>
-            </div>
-          </div>
-       </div>
-       <!--End Article-->
-       <!-- Star Gallery -->
-       <div class="gallery" id="gallery">
-        <h2 class="main-title">Gallery</h2>
-        <div class="container">
-          <div class="box anim">
-            <div class="image">
-              <img decoding="async" src="imgs/gallery-011.png" alt="" />
-            </div>
-          </div>
-          <div class="box anim">
-            <div class="image">
-              <img decoding="async" src="imgs/gallery-022.png" alt="" />
-            </div>
-          </div>
-          <div class="box anim">
-            <div class="image">
-              <img decoding="async" src="imgs/gallery-033.png" alt="" />
-            </div>
-          </div>
-          <div class="box anim">
-            <div class="image">
-              <img decoding="async" src="imgs/gallery-044.png" alt="" />
-            </div>
-          </div>
-          <div class="box anim">
-            <div class="image">
-              <img decoding="async" src="imgs/gallery-055.png" alt="" />
-            </div>
-          </div>
-          <div class="box anim">
-            <div class="image">
-              <img decoding="async" src="imgs/gallery-066.png" alt="" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- End Gallery -->
-       <!-- Start Discount -->
-    <div class="discount" id="discount">
       <div class="image">
+        <img decoding="async" src="imgs/landing-imageee.png" alt="" />
+      </div>
+    </div>
+    <a href="#articles" class="go-down">
+      <i class="fa-solid fa-angles-down fa-2x"></i>
+    </a>
+  </div>
+  <!-- End Landing -->
+  <!--Star Article-->
+  <div class="articles" id="formations">
+    <h2 class="main-title">Formations</h2>
+    <div class="container">
+      <div class="box anim">
+        <img src="./imgs/cat-01.jpg" alt="" />
         <div class="content">
-          <h2 class="anim">Découvre notre Formation</h2>
-          <div class="para">
-            <p class="anim">✅ Découvre comment atteindre tes objectifs professionnels</p>
-            <p class="anim">✅ Accède au programme complet de la formation</p>
-            <p class="anim">✅ Explore notre méthodologie et les technologies que nous enseignons</p>
-          </div>
-          <img decoding="async" src="imgs/discount.png" alt="" />
+          <h3>رحلة إلى مدينة العلوم</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut
+            voluptates culpa dignissimos
+          </p>
+        </div>
+        <div class="info">
+          <a href="#">Read More</a>
+          <i class="fa-solid fa-long-arrow-alt-right"></i>
         </div>
       </div>
-      <div class="form">
-        <div class="content">
 
-          <div id="toast">
-            <div class="checkicon"> 
-              <i class="fas fa-check-square"></i> 
-           </div>
-            "votre message est envoyer avec succès. Merci!
+      <div class="box anim">
+        <img src="./imgs/cat-02.jpg" alt="" />
+        <div class="content">
+          <h3>Formation Python</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut
+            voluptates culpa dignissimos
+          </p>
+        </div>
+        <div class="info">
+          <a href="#">Read More</a>
+          <i class="fa-solid fa-long-arrow-alt-right"></i>
+        </div>
+      </div>
+
+      <div class="box anim">
+        <img src="./imgs/cat-03.jpg" alt="" />
+        <div class="content">
+          <h3>Formation Micro-bit</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut
+            voluptates culpa dignissimos
+          </p>
+        </div>
+        <div class="info">
+          <a href="#">Read More</a>
+          <i class="fa-solid fa-long-arrow-alt-right"></i>
+        </div>
+      </div>
+
+      <div class="box anim">
+        <img src="./imgs/cat-04.jpg" alt="" />
+        <div class="content">
+          <h3>Formation Arduino</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut
+            voluptates culpa dignissimos
+          </p>
+        </div>
+        <div class="info">
+          <a href="#">Read More</a>
+          <i class="fa-solid fa-long-arrow-alt-right"></i>
+        </div>
+      </div>
+
+      <div class="box anim">
+        <img src="./imgs/cat-05.jpg" alt="" />
+        <div class="content">
+          <h3>Formation Scratch</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut
+            voluptates culpa dignissimos
+          </p>
+        </div>
+        <div class="info">
+          <a href="#">Read More</a>
+          <i class="fa-solid fa-long-arrow-alt-right"></i>
+        </div>
+      </div>
+
+      <div class="box anim">
+        <img src="./imgs/cat-06.jpg" alt="" />
+        <div class="content">
+          <h3>Formation HTML/CSS/Javascript</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut
+            voluptates culpa dignissimos
+          </p>
+        </div>
+        <div class="info">
+          <a href="#">Read More</a>
+          <i class="fa-solid fa-long-arrow-alt-right"></i>
+        </div>
+      </div>
+
+      <div class="box anim">
+        <img src="./imgs/cat-07.jpg" alt="" />
+        <div class="content">
+          <h3>Formation Unity 3D</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut
+            voluptates culpa dignissimos
+          </p>
+        </div>
+        <div class="info">
+          <a href="#">Read More</a>
+          <i class="fa-solid fa-long-arrow-alt-right"></i>
+        </div>
+      </div>
+
+      <div class="box anim">
+        <img src="./imgs/cat-08.jpg" alt="" />
+        <div class="content">
+          <h3>Scratch Avancée</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut
+            voluptates culpa dignissimos
+          </p>
+        </div>
+        <div class="info">
+          <a href="#">Read More</a>
+          <i class="fa-solid fa-long-arrow-alt-right"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--End Article-->
+  <!-- Star Gallery -->
+  <div class="gallery" id="gallery">
+    <h2 class="main-title">Gallery</h2>
+    <div class="container">
+      <div class="box anim">
+        <div class="image">
+          <img decoding="async" src="imgs/gallery-011.png" alt="" />
+        </div>
+      </div>
+      <div class="box anim">
+        <div class="image">
+          <img decoding="async" src="imgs/gallery-022.png" alt="" />
+        </div>
+      </div>
+      <div class="box anim">
+        <div class="image">
+          <img decoding="async" src="imgs/gallery-033.png" alt="" />
+        </div>
+      </div>
+      <div class="box anim">
+        <div class="image">
+          <img decoding="async" src="imgs/gallery-044.png" alt="" />
+        </div>
+      </div>
+      <div class="box anim">
+        <div class="image">
+          <img decoding="async" src="imgs/gallery-055.png" alt="" />
+        </div>
+      </div>
+      <div class="box anim">
+        <div class="image">
+          <img decoding="async" src="imgs/gallery-066.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Gallery -->
+  <!-- Start Discount -->
+  <div class="discount" id="discount">
+    <div class="image">
+      <div class="content">
+        <h2 class="anim">Découvre notre Formation</h2>
+        <div class="para">
+          <p class="anim">
+            ✅ Découvre comment atteindre tes objectifs professionnels
+          </p>
+          <p class="anim">✅ Accède au programme complet de la formation</p>
+          <p class="anim">
+            ✅ Explore notre méthodologie et les technologies que nous
+            enseignons
+          </p>
+        </div>
+        <img decoding="async" src="imgs/discount.png" alt="" />
+      </div>
+    </div>
+    <div class="form">
+      <div class="content">
+        <div id="toast">
+          <div class="checkicon">
+            <i class="fas fa-check-square"></i>
           </div>
-          
-          <h2 class="anim">Inscrivez-vous</h2>
-          <div class="gr-form" >
-            <form>
-            <input class="input anim" type="text" placeholder="Nom" id="name" required/>
-            <input class="input anim" type="email" placeholder="Email" id="email" required/>
-            <input class="input anim" type="text" placeholder="Telephone" id="mobile" required/>
+          "votre message est envoyer avec succès. Merci!
+        </div>
+
+        <h2 class="anim">Inscrivez-vous</h2>
+        <div class="gr-form">
+          <form>
+            <div class="boxName">
+              <input onkeydown="validation()" class="input anim" type="text" placeholder="Nom" id="name" />
+              <span id="text"></span>
+            </div>
+
+            <input class="input anim" type="email" placeholder="Email" id="email" />
+            <input class="input anim" type="text" placeholder="Telephone" id="mobile" />
             <select id="choix" class="minimal anim">
               <option value="" selected disabled>Votre Formation</option>
               <option value="scratch">Scratch</option>
@@ -231,14 +267,15 @@
               <option value="unity">Unity 3D</option>
             </select>
             <textarea class="input animfin" placeholder="Faites-nous part de vos besoins" id="message"></textarea>
-            <input class="animfin" type="submit" value="envoyer" onclick="sendMail()" id="submit"/>
+            <input class="animfin" type="submit" value="envoyer" onclick="sendMail()" id="submit" />
           </form>
-          </div>
         </div>
       </div>
     </div>
- 
-    <!-- End Discount -->
-     <script src="./js/main.js"></script>
+  </div>
+
+  <!-- End Discount -->
+  <script src="./js/main.js"></script>
 </body>
+
 </html>
