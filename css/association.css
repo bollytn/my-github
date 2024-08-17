@@ -770,6 +770,7 @@ ul {
     margin-bottom: 25px;
     caret-color: var(--main-color-alt2);
     color: var(--main-color-alt);
+    resize: none;
 }
 
 .discount .form .input:focus {
@@ -863,9 +864,48 @@ select:-moz-focusring {
     position: absolute;
     z-index: 3;
 }
-
-
 .discount .boxName .invalid {
+    background: url(../imgs/invalid.png);
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 12px;
+    right: 5px;
+    z-index: 3;
+}
+.discount .boxName .validEmail {
+    background: url(../imgs/valid.png);
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+    top: 12px;
+    right: 5px;
+    position: absolute;
+    z-index: 3;
+}
+.discount .boxName .invalidEmail {
+    background: url(../imgs/invalid.png);
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 12px;
+    right: 5px;
+    z-index: 3;
+}
+
+.discount .boxName .validMobile {
+    background: url(../imgs/valid.png);
+    background-size: cover;
+    width: 24px;
+    height: 24px;
+    top: 12px;
+    right: 5px;
+    position: absolute;
+    z-index: 3;
+}
+.discount .boxName .invalidMobile {
     background: url(../imgs/invalid.png);
     background-size: cover;
     width: 24px;
