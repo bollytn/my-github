@@ -17,14 +17,7 @@
      <script src="./js/mail.js"></script>
     <!-- Service Mail -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    <script type="text/javascript">
-      (function(){
-        emailjs.init({
-        publicKey: "rcK-plDa5pVCg7MW0",
-       });
-      })();
-    </script>
-
+    
     <title>Association</title>
 </head>
 <body>
@@ -224,6 +217,7 @@
           
           <h2 class="anim">Inscrivez-vous</h2>
           <div class="gr-form" >
+            <form>
             <input class="input anim" type="text" placeholder="Nom" id="name" required/>
             <input class="input anim" type="email" placeholder="Email" id="email" required/>
             <input class="input anim" type="text" placeholder="Telephone" id="mobile" required/>
@@ -237,12 +231,14 @@
               <option value="unity">Unity 3D</option>
             </select>
             <textarea class="input animfin" placeholder="Faites-nous part de vos besoins" id="message"></textarea>
-            <input class="animfin" type="submit" value="envoyer" onclick="sendMail()"/>
+            <input class="animfin" type="submit" value="envoyer" onclick="sendMail()" id="submit"/>
+          </form>
           </div>
         </div>
       </div>
     </div>
  
     <!-- End Discount -->
+     <script src="./js/main.js"></script>
 </body>
 </html>
