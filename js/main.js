@@ -15,7 +15,9 @@ function validation() {
     let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
     let mobile = document.getElementById('mobile');
     let iconMobile = document.getElementById('iconMobile');
-    var reg = /^[0-9]{7}$/;
+    var reg = /^[0-9]+$/;   // only 8 digit /^[0-9]{7}$/
+
+    let choice = document.getElementById('choix');
 
     if (name.value.length > 5) {
         iconName.classList.add('valid');
@@ -46,9 +48,11 @@ function validation() {
         iconMobile.classList.add('invalidMobile');
         submitButton.disabled = true;
     }
+
+    choice.value === '' ? submitButton.disabled = true : submitButton.disabled = false;
+
+
 }
-
-
 
 
 
