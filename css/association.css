@@ -850,9 +850,7 @@ select:-moz-focusring {
     position: relative;
 }
 
-.discount .boxName #text {
-
-}
+.discount .boxName #text {}
 
 .discount .boxName .valid {
     background: url(../imgs/valid.png);
@@ -864,6 +862,7 @@ select:-moz-focusring {
     position: absolute;
     z-index: 3;
 }
+
 .discount .boxName .invalid {
     background: url(../imgs/invalid.png);
     background-size: cover;
@@ -874,6 +873,7 @@ select:-moz-focusring {
     right: 5px;
     z-index: 3;
 }
+
 .discount .boxName .validEmail {
     background: url(../imgs/valid.png);
     background-size: cover;
@@ -884,6 +884,7 @@ select:-moz-focusring {
     position: absolute;
     z-index: 3;
 }
+
 .discount .boxName .invalidEmail {
     background: url(../imgs/invalid.png);
     background-size: cover;
@@ -905,6 +906,7 @@ select:-moz-focusring {
     position: absolute;
     z-index: 3;
 }
+
 .discount .boxName .invalidMobile {
     background: url(../imgs/invalid.png);
     background-size: cover;
@@ -939,6 +941,11 @@ select:-moz-focusring {
 
 .discount .form [type="submit"]:hover {
     background-color: rgb(110 83 173 / 90%);
+}
+
+.discount .form input[type=submit]:disabled {
+    background-color: rgb(110 83 173 / 50%);
+    cursor: default;
 }
 
 @media (max-width:767px) {
