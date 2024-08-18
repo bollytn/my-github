@@ -9,9 +9,13 @@ function validation() {
     let form = document.forms[0];
     let name = document.getElementById('name');
     let iconName = document.getElementById('iconName');
-
     let submitButton = document.getElementById('submit');
-
+    let email = document.getElementById('email').value;
+    let iconEmail = document.getElementById('iconEmail');
+    let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+    let mobile = document.getElementById('mobile');
+    let iconMobile = document.getElementById('iconMobile');
+    var reg = /^[0-9]{7}$/;
 
     if (name.value.length > 5) {
         iconName.classList.add('valid');
@@ -22,13 +26,6 @@ function validation() {
         iconName.classList.add('invalid');
         submitButton.disabled = true;
     }
-}
-
-function validationEmail() {
-    let submitButton = document.getElementById('submit');
-    let email = document.getElementById('email').value;
-    let iconEmail = document.getElementById('iconEmail');
-    let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
 
     if (email.match(pattern)) {
         iconEmail.classList.add('validEmail');
@@ -39,13 +36,6 @@ function validationEmail() {
         iconEmail.classList.add('invalidEmail');
         submitButton.disabled = true;
     }
-}
-
-function validationMobile() {
-    let submitButton = document.getElementById('submit');
-    let mobile = document.getElementById('mobile');
-    let iconMobile = document.getElementById('iconMobile');
-    var reg = /^[0-9]{7}$/;
 
     if (mobile.value.match(reg)) {
         iconMobile.classList.add('validMobile');
@@ -57,6 +47,7 @@ function validationMobile() {
         submitButton.disabled = true;
     }
 }
+
 
 
 
