@@ -4,7 +4,6 @@
     });
 })();
 
-
 function validation() {
     let form = document.forms[0];
     let name = document.getElementById('name');
